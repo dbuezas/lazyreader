@@ -129,7 +129,9 @@
             return false; /* prevent bubbling*/
         },
         showOverlay: function(selection) {
-            me.words = selection.replace(/^\s+|\s+$/g, ''); /*trim*/
+            selection = selection
+                .replace(/\n+/g, '\x00 '). /*keep new lines*/
+                .replace(/^\s+|\s+$/g, ''); /*trim*/
             me.words = me.words.split(/\s+/); /*split by separators*/
 
             me.$ = $(me.overlayHTML).appendTo("body");
@@ -174,7 +176,8 @@
             var factor = {
                 ".": 3,
                 ";": 2,
-                ":": 2
+                ":": 2,
+                "\x00": 3
             }[wordEndsWith] || 0;
             var waitTime = 60 / me.wpm * 1000;
             if (factor > 0){
