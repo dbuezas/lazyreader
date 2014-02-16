@@ -164,11 +164,11 @@
             me.draw();
         },
         cycle: function() {
-            me.move(1);
             if (me.index === me.words.length-1){
                 me.close();
                 return;
             }
+            me.move(1);
             me.draw();
             var wordEndsWith = me.words[me.index].substr(-1);
             var factor = {
