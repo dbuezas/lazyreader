@@ -14,7 +14,7 @@ To add it as a bookmark for easy access just create a bookmark in your browser a
 
 and afterwards paste the content of lazyreader.js.
 
-To just test it, paste the contents of lazyreader.js in the console.
+To just test it, paste the contents of lazyreader.js into the console.
 
 Use:
 ----
@@ -24,7 +24,7 @@ Alternatively you can open lazyReader.html and get the flavor of it before makin
 
 Demo:
 -----
-[[demo.gif]]
+[[http://raw.github.com/dbuezas/lazyreader/master/demo.gif]]
 
 
 I know, it should be a browser extension, the CSS/HTML/JS should be in different files, etc, but I'm too lazy and I just wanted to make it bookmarkable. This is just a Sunday hack.
