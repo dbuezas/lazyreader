@@ -24,7 +24,7 @@ Alternatively you can open lazyReader.html and get the flavor of it before makin
 
 Demo:
 -----
-[[http://raw.github.com/dbuezas/lazyreader/master/demo.gif]]
+![](http://raw.github.com/dbuezas/lazyreader/master/demo.gif)
 
 
 I know, it should be a browser extension, the CSS/HTML/JS should be in different files, etc, but I'm too lazy and I just wanted to make it bookmarkable. This is just a Sunday hack.
