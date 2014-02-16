@@ -31,9 +31,10 @@ Demo:
 -----
 ![](http://raw.github.com/dbuezas/lazyreader/master/demo.gif)
 
-
-I know, it should be a browser extension, the CSS/HTML/JS should be in different files, etc, but I'm too lazy and I just wanted to make it bookmarkable. This is just a Sunday hack.
+Sorry:
+------
+I know, it should be a browser extension, the CSS/HTML/JS should be in different files, this "me" object is weird, etc. I'm too lazy and I just wanted to make it bookmarkable. This is just a Sunday hack.
 
 Known bugs:
 -----------
-Some sites will override the css and capture keystrokes before the script does.
+Some sites will override the css and capture keystrokes before the script does :(.
