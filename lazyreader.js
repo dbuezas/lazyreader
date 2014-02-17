@@ -132,7 +132,7 @@
             selection = selection
                 .replace(/\n+/g, '\x00 '). /*keep new lines*/
                 .replace(/^\s+|\s+$/g, ''); /*trim*/
-            me.words = me.words.split(/\s+/); /*split by separators*/
+            me.words = selection.split(/\s+/); /*split by separators*/
 
             me.$ = $(me.overlayHTML).appendTo("body");
             $(document).on("keydown.lazyReader", me.keyboardHandler);
@@ -167,7 +167,9 @@
         },
         cycle: function() {
             if (me.index === me.words.length-1){
-                me.close();
+                setTimeout(function(){
+                    me.close();
+                }, 500);
                 return;
             }
             me.move(1);
