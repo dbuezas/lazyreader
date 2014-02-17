@@ -130,7 +130,7 @@
         },
         showOverlay: function(selection) {
             selection = selection
-                .replace(/\n+/g, '\x00 '). /*keep new lines*/
+                .replace(/\n+/g, '\x00 ') /*keep new lines*/
                 .replace(/^\s+|\s+$/g, ''); /*trim*/
             me.words = selection.split(/\s+/); /*split by separators*/
 
